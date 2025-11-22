@@ -1,10 +1,13 @@
 // --- 1. Definición de URLs y Áreas Geográficas ---
+const PROXY = "https://corsproxy.io/?"; 
+const RENFE_VP_URL = "https://gtfsrt.renfe.com/vehicle_positions.json";
+const RENFE_TU_URL = "https://gtfsrt.renfe.com/trip_updates.json";
 
-const VP_URL = "https://gtfsrt.renfe.com/vehicle_positions.json";
-const TU_URL = "https://gtfsrt.renfe.com/trip_updates.json";
+// Importante: Codificamos las URLs de Renfe y las concatenamos con el proxy.
+const VP_URL = PROXY + encodeURIComponent(RENFE_VP_URL);
+const TU_URL = PROXY + encodeURIComponent(RENFE_TU_URL);
 
 // Coordenadas aproximadas del rectángulo delimitador (Bounding Box) de la C. Valenciana
-// Se utiliza para filtrar los trenes relevantes.
 const VALENCIA_BBOX = {
     minLat: 37.95, // Sur (Alicante)
     maxLat: 40.80, // Norte (Castellón)
