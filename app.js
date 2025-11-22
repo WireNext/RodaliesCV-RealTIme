@@ -82,6 +82,12 @@ function processVehiclePositions(entities) {
 
     entities.forEach(entity => {
         const vehicle = entity.vehicle;
+        
+        // **AÑADIR VALIDACIÓN AQUÍ:** Si no hay posición, saltar esta entidad.
+        if (!vehicle || !vehicle.position) {
+            return; 
+        }
+
         const tripId = vehicle.trip.tripId;
         const lat = vehicle.position.latitude;
         const lon = vehicle.position.longitude;
