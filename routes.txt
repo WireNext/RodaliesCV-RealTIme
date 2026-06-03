@@ -264,6 +264,8 @@ route_id,route_short_name,route_long_name,route_type,route_color,route_text_colo
 32T0014C2  ,C2  ,Cártama                                 -Málaga-Centro Alameda                   ,2,0fcf34,FFFFFF                                    
 32T0015C2  ,C2  ,Cártama                                 -Álora                                   ,3,0fcf34,FFFFFF                                    
 32T0016C2  ,C2  ,Álora                                   -Cártama                                 ,3,0fcf34,FFFFFF                                    
+32T0017C2  ,C2  ,                                        -Cártama                                 ,3,0fcf34,FFFFFF                                    
+32T0018C2  ,C2  ,Cártama                                 -                                        ,3,0fcf34,FFFFFF                                    
 40T0001C1  ,C1  ,Valencia Nord                           -Platja i Grau de Gandia                 ,2,7AB3DE,FFFFFF                                    
 40T0002C1  ,C1  ,Platja i Grau de Gandia                 -Valencia Nord                           ,2,7AB3DE,FFFFFF                                    
 40T0005C2  ,C2  ,Valencia Nord                           -Moixent                                 ,2,F79529,FFFFFF                                    
